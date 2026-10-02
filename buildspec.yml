@@ -1,5 +1,11 @@
 version: 0.2
 
+env:
+  variables:
+    ECR_URI: 009736587590.dkr.ecr.ap-southeast-2.amazonaws.com/rpf-ecr-repo
+    ECR_REPOSITORY: rpf-ecr-repo
+    IMAGE_TAG: latest
+
 phases:
   pre_build:
     commands:
