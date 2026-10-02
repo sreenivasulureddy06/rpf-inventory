@@ -7,6 +7,10 @@ env:
     IMAGE_TAG: latest
 
 phases:
+  install:
+    runtime-versions:
+      # This forces CodeBuild to configure and lock the environment to JDK 21
+      java: corretto21
   pre_build:
     commands:
       - echo Logging in to Amazon ECR
