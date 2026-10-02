@@ -10,7 +10,7 @@ phases:
   pre_build:
     commands:
       - echo Logging in to Amazon ECR
-      - aws ecr get-login-password --region ap-southeast-2 | docker login --username reddy.sreeni1983@gmail.com --password-stdin 009736587590.dkr.ecr.ap-southeast-2.amazonaws.com/rpf-ecr-repo
+      - aws ecr get-login-password --region ap-southeast-2 | docker login --username AWS --password-stdin 009736587590.dkr.ecr.ap-southeast-2.amazonaws.com/rpf-ecr-repo
 
   build:
     commands:
